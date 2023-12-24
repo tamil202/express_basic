@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loading</title>
+</head>
+<body class="body">
+    <div class="load">
+        <div class="loading">
+            <div class="inner-loader">
+
+            </div>
+        </div>
+    </div>
+    <style>
+        .load{
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .loading{
+            width: 100px;
+            height: 100px;
+            background: black;
+            border-radius:50% ;
+            animation: round 2s linear infinite;
+        }
+        .inner-loader{
+             width: 90px;
+            height: 90px;
+            background: rgb(234, 230, 230);
+            border-radius:50% ;
+            z-index: 99999999;
+           /* margin: 5px; */
+        }
+        @keyframes round {
+            0%{
+                transform: rotateZ(0deg);
+            }
+            100%{
+                transform: rotateZ(360deg);
+            }
+        }
+    </style>
+</body>
+</html>
